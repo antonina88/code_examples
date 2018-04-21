@@ -1,0 +1,83 @@
+.movie {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  line-height: 25px;
+
+  .home_link {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #484848;
+    font-weight: bold;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      position: relative;
+      top: 9px;
+      margin-right: 1px;
+      background-image: url('/img/arrowBack.png');
+    }
+  }
+
+  .image {
+    width: 250px;
+    height: 320px;
+    margin-right: 15px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  svg {
+    margin-right: 5px;
+  }
+
+  svg:hover {
+    cursor: pointer;
+  }
+
+  .actors__link {
+    color: #484848;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .actors__link:not(:last-child)::after {
+    content: ', ';
+  }
+
+  .container {
+    display: flex;
+    margin-bottom: 20px;
+
+    .edit,
+    .delete_btn {
+      width: 120px;
+      height: 30px;
+      color: #fff;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      padding: 3px;
+    }
+
+    .edit {
+      display: block;
+      background: #12847f;
+      text-decoration: none;
+      text-align: center;
+      margin-right: 10px;
+    }
+
+    .delete_btn {
+      background: #9a2b2b;
+    }
+  }
+}
+

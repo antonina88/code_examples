@@ -1,0 +1,39 @@
+.movie {
+  width: 260px;
+  height: 470px;
+  border: 1px solid #bfb9b9;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+
+  .image {
+    height: 70%;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .title:hover {
+    cursor: pointer;
+    color: #172096;
+  }
+
+  svg {
+    margin-right: 5px;
+  }
+
+  svg:hover {
+    cursor: pointer;
+  }
+
+  &__link {
+    color: #3e3e40;
+    text-align: center;
+    margin-bottom: 5px;
+    text-decoration: none;
+  }
+}
+

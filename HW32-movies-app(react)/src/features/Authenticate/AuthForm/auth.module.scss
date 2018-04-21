@@ -1,0 +1,35 @@
+.auth {
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto 10px;
+  border-radius: 8px;
+  border: 1px solid #484848;
+  background: rgba(255, 255, 255, 0.85);
+
+  .item {
+    width: 280px;
+    height: 25px;
+    margin: 2px auto;
+    padding: 2px 5px;
+  }
+
+  .label {
+    margin: 15px 18px 5px;
+  }
+
+  .auth_btn {
+    display: block;
+    margin: 15px auto 0;
+    width: 130px;
+    height: 35px;
+    border: 1px solid #ccc;
+    background: #6dec77;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

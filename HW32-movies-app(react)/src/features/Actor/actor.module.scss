@@ -1,0 +1,18 @@
+.actor {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  line-height: 28px;
+
+  .image {
+    width: 180px;
+    height: 200px;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .container {
+    margin-top: 15px;
+  }
+}
+
