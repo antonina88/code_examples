@@ -1,0 +1,52 @@
+@mixin btn_transparent($textTransform) {
+	text-transform: $textTransform;
+	display: block;
+	width: 196px;
+	height: 55px;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	background: transparent;
+	border: 1px solid #acacac;
+}
+
+@mixin albumsDate($paddingBottom: 5px) {
+	color: #595959;
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+	padding-bottom: $paddingBottom;
+}
+
+@mixin albumsGroup($color: #000) {
+	font-size: 14px;
+	padding: 5px 0 30px;
+	color: $color;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+@mixin albumsTitle() {
+	font-size: 23px;
+	color: #000;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+@mixin mainTitle() {
+	font: 400 $font-size-h2 $font-title;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	margin-bottom: 35px;
+	position: relative;
+}
+
+@mixin line-through-title($width, $left) {
+	content: "";
+	width: $width;
+	height: 2px;
+	background: #000;
+	position: absolute;
+	top: 50%;
+	left: $left;
+}
