@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Registration page</title>
+  <link rel="stylesheet" href="./css/reset.css"/>
+  <link rel="stylesheet" href="./css/main.min.css"/>
+  <script async src="./js/registration.js"></script>
+</head>
+<body>
+  <div class="wrapper wrapper--registration">
+    <h1 class="main-title">Registration page</h1>
+    <form class="form form--authoriation" action="#" method="post">
+      <h2 class="form__title">Registration form</h2>
+      <div class="form__container">
+        <label class="form__label" for="email-field">Email</label>
+        <input class="form__input" data-element="email" type="email" id="email-field" name="registeration-email" autofocus/>
+        <p class="form__info"><sup>*</sup> formate of email xxxxxxx@xxxxx.xxx</p>
+      </div>
+      
+      <div class="form__container">
+        <label class="form__label" for="phone-field">Phone</label>
+        <input class="form__input" data-element="phone" type="text" id="phone-field" name="registeration-phone"/>
+        <p class="form__info"><sup>*</sup> formate of phone +38(0XX)-XXX-XX-XX</p>
+      </div>
+
+      <div class="form__container">
+        <label class="form__label" for="password-field">Password</label>
+        <input class="form__input" data-element="password" type="password" id="password-field" name="registeration-password"/>
+        <p class="form__info"><sup>*</sup> Password must contain 5 or more characters</p>
+      </div>
+
+      <div class="form__container">
+        <label class="form__label" for="confirm-password">Confirm password</label>
+        <input class="form__input" data-element="confirmPassword"  type="password" id="confirm-password" name="confirm-password"/>
+      </div>
+
+      <div class="form__container">
+        <label class="form__label" for="birth-day">Date of birth</label>
+        <input class="form__input" data-element="birthday" type="text" id="birth-day" name="birth-day-field"/>
+        <p class="form__info"><sup>*</sup> formate of date mm/dd/yyyy</p>
+      </div>
+
+      <input class="form__submit" type="submit" value="Sign up"/>
+      <a class="form__link-signin" href="./login.html">Sign in</a>
+    </form>
+  </div>
+</body>
+</html>

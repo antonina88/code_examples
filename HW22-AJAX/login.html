@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Autorization page</title>
+  <link rel="stylesheet" href="./css/reset.css"/>
+  <link rel="stylesheet" href="./css/main.min.css"/>
+  <script async src="./js/login.js"></script>
+</head>
+<body>
+  <div class="wrapper wrapper--authoriation">
+    <h1 class="main-title">Autorization page</h1>
+    <form class="form form--login" action="#" method="post">
+      <h2 class="form__title">Login form</h2>
+      <div class="form__container">
+        <label class="form__label" for="email-field">Email</label>
+        <input class="form__input" data-element="email-auth" type="email" id="email-field" name="login-email" autofocus/>
+        <p class="form__info"><sup>*</sup> formate of email xxxxxxx@xxxxx.xxx</p>
+      </div>
+      <div class="form__container">
+        <label class="form__label" for="password-field">Password</label>
+        <input class="form__input" data-element="password-auth" type="password" id="password-field" name="login-password" />
+        <p class="form__info"><sup>*</sup> Password must contain 5 or more characters</p>
+      </div>
+      <input class="form__submit" type="submit" value="Sign in" />
+      <a href="./registration.html">Sign up</a>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>User profile</title>
+  <link rel="stylesheet" href="./css/reset.css"/>
+  <link rel="stylesheet" href="./css/main.min.css"/>
+  <script async src="./js/profile.js"></script>
+</head>
+<body>
+  <div class="wrapper wrapper--profile">
+    <button class="logout">Log out</button>
+    <br/>
+    <a class="wrapper__home-link" href="index.html">Home page</a>
+    
+    <div class="user">
+      <h1 class="main-title main-title--profile">Personal data</h1>
+      <div class="user__container">
+        <span>Email:</span>
+        <p data-user="email" class="user__item user__item--email"></p>
+        <button class="user__btn user__btn--edit"></button>
+        <button class="user__btn user__btn--save"></button>
+        <button class="user__btn user__btn--cancel"></button>
+      </div>
+
+      <div class="user__container">
+        <span>Phone:</span>
+        <p data-user="phone" class="user__item user__item--phone"></p>
+        <button class="user__btn user__btn--edit"></button>
+        <button class="user__btn user__btn--save"></button>
+        <button class="user__btn user__btn--cancel"></button>
+      </div>
+
+      <div class="user__container">
+        <span>Birthday:</span>
+        <p data-user="birthday" class="user__item user__item--birthday"></p>
+        <button class="user__btn user__btn--edit"></button>
+        <button class="user__btn user__btn--save"></button>
+        <button class="user__btn user__btn--cancel"></button>
+      </div>
+      <div class="user__container">
+        <a class="user__item user__item--password" href="#">Edit password</a>
+        <input class="user__input user__input--password" type="text" name="password"/>
+        <button class="user__saveBtn">Save</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
